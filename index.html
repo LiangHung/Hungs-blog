@@ -7,34 +7,87 @@
     <meta name="author" content="Hung" />
     <meta name="robots" content="index,follow" />
     <meta name="description" content="這是家泓的個人網站" />
+
     <title>首頁 | 家泓的個人網頁</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body>
     <header>
       <nav>
         <ul>
-          <li><a href="#">首頁</a></li>
-          <li><a href="project.html">Projects</a></li>
+          <li><a class="active" href="#">首頁</a></li>
+          <li><a href="project.html" target="_blank">我的Projects</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section class="left">
-        <h1>Hi,您好 我是梁家泓</h1>
+        <h1>
+          您好<br />
+          我是家泓
+        </h1>
+        <p>我畢業於東海大學資工系</p>
         <p>
-          我是梁家泓，畢業於東海大學資訊工程系，個性隨和，積極學習，自律自我管理能力良好，有責任心。
+          我在高中時就對程式有興趣，且也在高中時接觸第一個語言C++，大學時因興趣選擇了資工系，後來從東海大學畢業。
         </p>
       </section>
+      <div class="skill">
+        <h3>個人技能</h3>
+        <h4>程式語言</h4>
+        <nav>
+          <ol>
+            <li>Python</li>
+            <p>
+              曾使用過flask進行網頁撰寫 畢業專題使用python進行撰寫
+              使用過tkinter進行視窗開發
+            </p>
+            <li>C++</li>
+            <p>瞭解基礎語法</p>
+          </ol>
+        </nav>
+        <h4>資料庫</h4>
+        <nav>
+          <ol>
+            <li>MySql</li>
+            <li>MongoDB</li>
+            <p>
+              曾透過Python中的pymysql，和database建立連線，並使用新增、刪除、修改、查詢
+            </p>
+          </ol>
+        </nav>
+        <h4>網頁開發</h4>
+        <nav>
+          <ol>
+            <li>瞭解基本 HTML、CSS，懂JavaScript基本語法</li>
+          </ol>
+        </nav>
+        <h4>其它技能</h4>
+        <nav>
+          <ol>
+            <li>github</li>
+            <p>曾使用git進行版本控制</p>
+            <li>docker</li>
+            <p>曾撰寫過dockerfile在ununtu環境中架設python環境</p>
+          </ol>
+        </nav>
+      </div>
     </main>
     <footer>
-      <a href="https://github.com/LiangHung"
-        ><img
-          src="./ICONS/github-brands 1.svg"
-          alt="github"
-          title="github page"
-      /></a>
+      <br />
+      <div class="footerIcon">
+        <a href="https://github.com/LiangHung" target="_blank"
+          ><img
+            src="./ICONS/github-brands 1.svg"
+            alt="github"
+            title="github page"
+        /></a>
+      </div>
     </footer>
   </body>
 </html>

@@ -30,9 +30,14 @@ header nav ul li a {
   text-decoration: none;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
 main section.left {
   margin: 1rem 1rem 1rem 1rem;
-  flex: 3 1 500px;
+  flex: 3 1 200px;
   padding: 2rem;
   border: 5px solid black;
   border-radius: 5rem;
@@ -46,6 +51,30 @@ main .skill {
 }
 main .skill nav {
   margin-left: 1rem;
+}
+main section.second {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 16px;
+}
+main section.second .col {
+  width: 300px;
+  flex-wrap: wrap;
+}
+main section.second .card {
+  margin-top: 16px;
+  flex-direction: column;
+}
+main section.second div {
+  flex-wrap: wrap;
+}
+main section.second div img {
+  align-items: center;
+  justify-content: center;
+  height: 273px;
+  width: 273px;
 }
 
 footer {

@@ -9,77 +9,124 @@ body {
   position: relative;
 }
 
-header {
-  background-color: rgb(240, 179, 47);
+header.head img {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  margin-left: 1rem;
 }
-header nav {
-  width: 100%;
-}
-header nav ul {
-  padding: 2rem;
-  width: 70%;
-  display: flex;
-  list-style-type: none;
-}
-header nav ul li {
-  font-size: 1.75rem;
-}
-header nav ul li a {
-  padding: 1rem 1rem;
-  color: black;
-  text-decoration: none;
+@media screen and (max-width: 576px) {
+  header.head nav div {
+    flex-direction: column;
+    text-align: center;
+  }
+  header.head nav div img {
+    margin: 0;
+  }
 }
 
 main {
   display: flex;
+  align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
 }
-main section.left {
-  margin: 1rem 1rem;
-  flex: 3 1 200px;
-  padding: 2rem;
-  border: 5px solid black;
-  border-radius: 5rem;
-}
-main .skill {
-  margin: 1rem 1rem;
-  flex: 3 1 500px;
-  padding: 2rem;
-  border: 5px solid black;
-  border-radius: 5rem;
-}
-main section.second {
+main section.information {
+  width: 65vw;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: 16px;
-}
-main section.second .col {
-  width: 300px;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
   flex-wrap: wrap;
+  border: 5px solid black;
+  border-radius: 5rem;
 }
-main section.second .card {
-  margin-top: 16px;
+main section.information .text {
+  flex: 13 1;
+  margin-left: 1rem;
+}
+main section.information .text img {
+  width: 2rem;
+  height: 2rem;
+  padding-bottom: 0;
+  cursor: pointer;
+}
+main section.information .photo {
+  display: flex;
+  flex: 1 1 150px;
   flex-direction: column;
-}
-main section.second div {
-  flex-wrap: wrap;
-}
-main section.second div img {
-  align-items: center;
   justify-content: center;
-  height: 273px;
-  width: 273px;
+  align-items: center;
+}
+main section.information .photo img {
+  width: 150px;
+  height: 200px;
+  border-radius: 5rem 5rem 1rem 1rem;
+}
+main section.information .photo p {
+  font-size: 1rem;
+}
+@media screen and (max-width: 700px) {
+  main section.information section.information {
+    flex: none;
+    flex-direction: column;
+  }
+}
+main section.skill {
+  margin: 1rem 1rem;
+  padding: 2rem;
+  border: 5px solid black;
+  width: 65vw;
+  border-radius: 5rem;
+}
+main section.skill h3 {
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  main section.information {
+    width: 80vw;
+    flex-direction: column;
+  }
+  main section.skill {
+    width: 80vw;
+    flex-direction: column;
+  }
 }
 
-footer {
-  display: flex;
+main.project {
+  display: grid;
+  grid-template-columns: repeat(3, 273px);
+  gap: 30px;
   justify-content: center;
-  padding-top: 2rem;
+  flex-wrap: wrap;
+  margin: 16px 0;
 }
-footer .footerIcon {
-  width: 5vh;
-  height: 5vh;
+main.project .card {
+  margin-top: 16px;
+  height: 489px;
+  width: 273px;
+}
+main.project .card .card-body {
+  flex-direction: column;
+  height: 214px;
+}
+main.project img {
+  padding-left: 0.5px;
+  padding-top: 0.5px;
+  height: 270px;
+  width: 270px;
+}
+
+@media screen and (max-width: 900px) {
+  div.card {
+    grid-template-columns: repeat(2, 273px);
+  }
+}
+select.test {
+  background-color: aqua;
+}
+select.test div.con {
+  background-color: red;
+  width: 80vw;
+  height: 80vw;
 }/*# sourceMappingURL=style.css.map */

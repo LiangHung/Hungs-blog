@@ -8,7 +8,7 @@
     <meta name="robots" content="index,follow" />
     <meta name="description" content="這是家泓的個人網站" />
 
-    <title>Projects | 家泓的個人網頁</title>
+    <title>作品集 | 家泓的個人網頁</title>
 
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap"
@@ -23,143 +23,99 @@
     />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-dark bg-dark">
+    <header class="head">
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">首頁</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarText"
-            aria-controls="navbarText"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"
-                  >Projects</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-            </ul>
-          </div>
+          <a href="./index.html"
+            ><img src="./ICONS/blogger (1).png" alt="" srcset=""
+          /></a>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">首頁</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">作品集</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">聯絡資訊</a>
+            </li>
+          </ul>
         </div>
       </nav>
     </header>
 
-    <main>
-      <section class="second">
-        <div class="row row-cols-md-2 g-4">
-          <div class="col">
-            <div class="card">
-              <img src="./ICONS/final.JPG" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">畢業專題</h5>
-                <p class="card-text">
-                  利用人體骨架偵測模型，藉由單一RGB影像的輸入取得3D人體骨架資訊，對桌球人員的動作進行分析與辨識
-                </p>
-                <a
-                  href="https://github.com/LiangHung/hung_tunghai_project"
-                  class="btn btn-primary"
-                  target="_blank"
-                  >連結</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="./ICONS/flask.JPG" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">雲端計算期末</h5>
-                <p class="card-text">使用Docker部署Flask + MySQL網站微服務</p>
-                <a
-                  href="https://github.com/LiangHung/docker_flask_mysql"
-                  class="btn btn-primary"
-                  target="_blank"
-                  >連結</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="./ICONS/todo.JPG" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">TodoList</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content.
-                </p>
-                <a
-                  href="https://github.com/LiangHung/Hungs-TodoList"
-                  class="btn btn-primary"
-                  target="_blank"
-                  >連結</a
-                >
-              </div>
-            </div>
+    <main class="project">
+      <div class="col">
+        <div class="card">
+          <img src="./ICONS/final.JPG" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">畢業專題</h5>
+            <p class="card-text">
+              利用人體骨架偵測模型，藉由單一RGB影像的輸入取得3D人體骨架資訊，對桌球人員的動作進行分析與辨識
+            </p>
+            <a
+              href="https://github.com/LiangHung/hung_tunghai_project"
+              class="btn btn-primary"
+              target="_blank"
+              >連結</a
+            >
           </div>
         </div>
-      </section>
-      <section class="second">
-        <div class="row row-cols-md-2 g-4">
-          <div class="col">
-            <div class="card">
-              <img src="./ICONS/tai.JPG" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">台灣經濟發展歷史</h5>
-                <p class="card-text">過去70年台灣經濟發展的歷史以及相關政策</p>
-                <a
-                  href="https://github.com/LiangHung/tai-project"
-                  class="btn btn-primary"
-                  target="_blank"
-                  >連結</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="./ICONS/flask.JPG" class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">雲端計算期末</h5>
-                <p class="card-text">使用Docker部署Flask + MySQL網站微服務</p>
-                <a
-                  href="https://github.com/LiangHung/docker_flask_mysql"
-                  class="btn btn-primary"
-                  target="_blank"
-                  >連結</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card">
-              <img src="..." class="card-img-top" alt="..." />
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">
-                  This is a longer card with supporting text below as a natural
-                  lead-in to additional content.
-                </p>
-                <a href="#" class="btn btn-primary">連結</a>
-              </div>
-            </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./ICONS/flask.JPG" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">雲端計算期末</h5>
+            <p class="card-text">使用Docker部署Flask + MySQL網站微服務</p>
+            <a
+              href="https://github.com/LiangHung/docker_flask_mysql"
+              class="btn btn-primary"
+              target="_blank"
+              >連結</a
+            >
           </div>
         </div>
-      </section>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="./ICONS/todo.JPG" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">TodoList</h5>
+            <p class="card-text">
+              This is a longer card with supporting text below as a natural
+              lead-in to additional content.
+            </p>
+            <a
+              href="https://github.com/LiangHung/Hungs-TodoList"
+              class="btn btn-primary"
+              target="_blank"
+              >連結</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="./ICONS/tai.JPG" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">台灣經濟發展歷史</h5>
+            <p class="card-text">過去70年台灣經濟發展的歷史以及相關政策</p>
+            <a
+              href="https://github.com/LiangHung/tai-project"
+              class="btn btn-primary"
+              target="_blank"
+              >連結</a
+            >
+          </div>
+        </div>
+      </div>
+      
+      
     </main>
+
     <footer></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"

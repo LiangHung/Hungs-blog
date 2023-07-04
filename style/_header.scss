@@ -1,0 +1,30 @@
+header.head {
+  position: sticky;
+  z-index: 5;
+  top: 0;
+  .navset {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  a {
+    margin-left: 1rem;
+  }
+  img {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+
+  @media screen and (max-width: 576px) {
+    nav {
+      display: flex;
+      div {
+        flex-direction: row;
+
+        li {
+          display: flex;
+        }
+      }
+    }
+  }
+}

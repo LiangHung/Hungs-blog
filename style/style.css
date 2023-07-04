@@ -8,22 +8,7 @@
 body {
   position: relative;
   background-image: url("../background/4907157.jpg");
-}
-
-header.head img {
-  width: 2rem;
-  height: 2rem;
-  cursor: pointer;
-  margin-left: 1rem;
-}
-@media screen and (max-width: 576px) {
-  header.head nav div {
-    flex-direction: column;
-    text-align: center;
-  }
-  header.head nav div img {
-    margin: 0;
-  }
+  background-size: cover;
 }
 
 main {
@@ -33,14 +18,12 @@ main {
   flex-wrap: wrap;
 }
 main section.information {
-  width: 65vw;
   display: flex;
   padding: 1rem;
   margin-top: 1rem;
   margin-left: 1rem;
   flex-wrap: wrap;
-  border: 5px solid black;
-  border-radius: 5rem;
+  width: 50%;
 }
 main section.information .text {
   flex: 13 1;
@@ -62,7 +45,7 @@ main section.information .photo {
 main section.information .photo img {
   width: 150px;
   height: 200px;
-  border-radius: 5rem 5rem 1rem 1rem;
+  border-radius: 1rem 1rem;
 }
 main section.information .photo p {
   font-size: 1rem;
@@ -73,12 +56,27 @@ main section.information .photo p {
     flex-direction: column;
   }
 }
+main section.about-me {
+  margin: 1rem 1rem;
+  padding: 2rem;
+  width: 50%;
+}
+main section.about-me h3 {
+  text-align: center;
+}
+main section.about-me div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main section.about-me div span {
+  padding: 1rem;
+  font-size: 1.25rem;
+}
 main section.skill {
   margin: 1rem 1rem;
   padding: 2rem;
-  border: 5px solid black;
-  width: 65vw;
-  border-radius: 5rem;
+  width: 50%;
 }
 main section.skill h3 {
   text-align: center;
@@ -92,37 +90,12 @@ main section.skill h3 {
     width: 80vw;
     flex-direction: column;
   }
-}
-
-main.project {
-  display: grid;
-  grid-template-columns: repeat(3, 273px);
-  gap: 30px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 16px 0;
-}
-main.project .card {
-  margin-top: 16px;
-  height: 489px;
-  width: 273px;
-}
-main.project .card .card-body {
-  flex-direction: column;
-  height: 214px;
-}
-main.project img {
-  padding-left: 0.5px;
-  padding-top: 0.5px;
-  height: 270px;
-  width: 270px;
-}
-
-@media screen and (max-width: 900px) {
-  div.card {
-    grid-template-columns: repeat(2, 273px);
+  main section.about-me {
+    width: 80vw;
+    flex-direction: column;
   }
 }
+
 select.test {
   background-color: aqua;
 }
@@ -130,4 +103,103 @@ select.test div.con {
   background-color: red;
   width: 80vw;
   height: 80vw;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(131, 131, 131);
+}
+footer p {
+  font-size: 1.25rem;
+}
+
+header.head {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 5;
+  top: 0;
+}
+header.head .navset {
+  max-width: 860px;
+  margin: 0 auto;
+}
+header.head a {
+  margin-left: 1rem;
+}
+header.head img {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 576px) {
+  header.head nav {
+    display: flex;
+  }
+  header.head nav div {
+    flex-direction: row;
+  }
+  header.head nav div li {
+    display: flex;
+  }
+}
+
+main.project {
+  padding: 2rem 0rem;
+}
+main.project section.project {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+main.project section.project .card {
+  margin-top: 16px;
+  height: 489px;
+  width: 300px;
+  position: relative;
+}
+main.project section.project .card .card-body {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  bottom: 1rem;
+  border-top: 1px solid rgb(119, 115, 115);
+}
+main.project section.project .card .card-body a {
+  position: absolute;
+  bottom: 1rem;
+}
+main.project section.project .card-top {
+  overflow: hidden;
+  height: 220px;
+  display: flex;
+  align-items: center;
+}
+main.project section.project .card-top img {
+  transition: all 0.3 ease;
+}
+main.project section.project .card-top img:hover {
+  transform: scale(1.25);
+}
+
+.card-img,
+.card-img-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+@media screen and (max-width: 900px) {
+  main.project section.project {
+    grid-template-columns: repeat(2, 300px);
+  }
+}
+@media screen and (max-width: 630px) {
+  main.project section.project {
+    grid-template-columns: repeat(1, 300px);
+  }
 }/*# sourceMappingURL=style.css.map */

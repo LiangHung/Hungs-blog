@@ -1,0 +1,66 @@
+main.project {
+  padding: 2rem 0rem;
+  section.project {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .card {
+      margin-top: 16px;
+      height: 489px;
+      width: 300px;
+      position: relative;
+      .card-body {
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        bottom: 1rem;
+        border-top: 1px solid rgb(119, 115, 115);
+
+        a {
+          position: absolute;
+          bottom: 1rem;
+        }
+      }
+    }
+    .card-top {
+      overflow: hidden;
+      height: 220px;
+
+      display: flex;
+
+      align-items: center;
+
+      img {
+        transition: all 0.3 ease;
+        &:hover {
+          transform: scale(1.25);
+        }
+      }
+    }
+  }
+}
+.card-img,
+.card-img-top {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+@media screen and (max-width: 900px) {
+  main.project {
+    section.project {
+      grid-template-columns: repeat(2, 300px);
+    }
+  }
+}
+@media screen and (max-width: 630px) {
+  main.project {
+    section.project {
+      grid-template-columns: repeat(1, 300px);
+    }
+  }
+}
